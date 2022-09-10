@@ -23,9 +23,9 @@ const Feed = () => {
           borderRight: "1px solid #3d3d3d",
         }}
       >
-        <Sidebar 
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
+        <Sidebar
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
         />
 
         <Typography variant="body2" sx={{ color: "#fff", fontSize: "12px" }}>
@@ -34,11 +34,11 @@ const Feed = () => {
       </Container>
       {/* End of Sidebar */}
 
-      <Container sx={{ minWidth: "88%", height: '90vh', overflowY: 'auto' }}>
-         <Typography variant="h4" mb={2} sx={{color:"white"}}>
-            {selectedCategory} <span style={{color:"#F31503"}}>videos</span>
-         </Typography>
-         <Videos videos={videos}/>
+      <Container sx={{ minWidth: "88%", height: "90vh", overflowY: "auto" }}>
+        <Typography variant="h4" mb={2} sx={{ color: "white" }}>
+          {selectedCategory} <span style={{ color: "#F31503" }}>videos</span>
+        </Typography>
+        <Videos videos={videos} />
       </Container>
     </Stack>
   );
